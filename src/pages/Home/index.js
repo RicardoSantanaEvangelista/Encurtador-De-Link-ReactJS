@@ -1,7 +1,27 @@
+import { FiLink } from 'react-icons/fi';
+import './styles.css';
+
 function Home() {
     return (
-      <div>
-        <h1>Página Home</h1>
+      <div className="container-home">
+
+        <div className="logo">
+            <img src="/logo.png" alt="Imagem da logo"/>
+            <h1>Encurtar Link</h1>
+            <span>Cole seu link para encurtar 👇🏻 !</span>
+        </div>
+
+        <div className="area-input">
+            <div>
+              <FiLink size={24} color="#FFF"/>
+              <input
+                placeholder="Cole seu link aqui..."
+              
+              />
+            </div>
+            <button>Gerar Link</button>
+        </div>
+
       </div>
     );
   }
