@@ -1,10 +1,11 @@
+import RoutesApp from "./routes";
 
-function App() {
-  return (
-    <div className="app">
-      <h1>Encurtador de Links</h1>
-    </div>
-  );
+function App(){
+    return(
+        <div className="app">
+            <RoutesApp/>
+        </div>
+    );
 }
 
 export default App;
